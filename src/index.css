@@ -1,0 +1,44 @@
+html, body {
+  background: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #222326;
+  font-family: sans-serif;
+}
+
+main {
+  margin-top: 197px;
+  padding-bottom: 100px;
+}
+
+h1 {
+  letter-spacing: -0.25rem;
+}
+
+h2, h3, h4 {
+  letter-spacing: -0.15rem;
+}
+
+pre {
+  border: 0 !important;
+}
+
+.spotify-green {
+  color: #1db954;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

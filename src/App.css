@@ -1,0 +1,248 @@
+.App {
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+.App-header {
+  padding: 20px;
+  color: white;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #222326;
+  z-index: 1000;
+}
+
+.App-footer {
+  background-color: #000;
+  padding: 80px 0 50px;
+}
+
+.App-logo {
+  height: 40px;
+}
+
+.App .secondaryNav {
+  padding: 30px;
+
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  height: 117px;
+  background: #f59b23;
+  z-index: 1000;
+}
+
+.App .secondaryNav.secondaryNav-webApi {
+  background: #f59b23;
+  color: #FFF;
+}
+
+.App .secondaryNav.secondaryNav-webApi h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.App .secondaryNav.secondaryNav-webApi h1 > span.version {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 10px;
+  position: relative;
+  top: -8px;
+  
+  background: rgba(0, 0, 0, 0.3);
+  
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.App .sidebarNav {
+  padding-top: 25px;
+  word-wrap: break-word;
+  color: white;
+}
+
+.App .sidebarNav > ul {
+  margin: 0;
+  padding: 10px 0;
+  line-height: 1.75;
+  position: fixed;
+}
+
+.App .sidebarNav > ul > li > ul {
+  margin: 0;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.App .sidebarNav > ul > li,
+.App .sidebarNav > ul > li > ul > li {
+  list-style: circle inside;
+}
+
+.App .sidebarNav > ul > li > a {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.App .sidebarNav > ul > li > ul > li > a:not(.btn) {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.App .sidebarNav > ul > li a:not(.btn) {
+  color: white;
+}
+
+.App .sidebarNav > ul > li a:hover {
+  text-decoration: underline;
+}
+
+.App .docsContent {
+  color: white;
+  word-wrap: break-word;
+}
+
+.App .docsContent a:not(.btn) {
+  color: #f59b23;
+}
+
+.App .docsContent a:hover {
+  text-decoration: underline;
+}
+
+.App .docsContent .docsContentCodeMenu {
+  position: fixed;
+  width: 30%;
+  top: 0;
+  right: 0;
+  background: #000;
+  height: 100%;
+}
+
+.App .docsContent .docsContentSection {
+  width: 55%;
+  left: 0;
+}
+
+.App .docsContent > .docsContentSection > h1 > a:not(.btn) {
+  color: white;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory {
+  color: white;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > h1 {
+  color: rgba(255, 255, 255, 0.5);  
+  font-weight: 200;
+  letter-spacing: -0.1rem;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > h1 > a {
+  color: white;
+  list-style: circle inside;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > h1 > a:hover {
+  text-decoration: underline;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint {
+  color: white;
+}
+
+.App .docsContent > .docsContentSection .moveToRightColumn,
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting {
+  position: absolute;
+  width: 36%;
+  right: 0;
+  z-index: 100;
+  margin-top: -50px;
+}
+
+.App .docsContent > .docsContentSection .moveToRightColumn {
+  padding: 10px 20px;
+}
+
+.App .docsContent > .docsContentSection .moveToRightColumn > small {
+  padding: 10px 20px;
+  opacity: 0.5;
+}
+
+.App .docsContent > .docsContentSection .moveToRightColumn > small,
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > ul {
+  padding: 0 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > ul > li {
+  list-style: none;
+  display: inline-block;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > ul > li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > ul > li > a:not(.btn) {
+  color: #f59b23;
+}
+
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > ul > li.active > a:not(.btn):hover {
+  text-decoration: none;
+}
+
+.App .docsContent > .docsContentSection .moveToRightColumn > small > a:not(.active):not(.btn),
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > ul > li:not(.active) > a:not(.btn) {
+  opacity: 0.4;
+}
+
+.App .docsContent > .docsContentSection .moveToRightColumn > pre,
+.App .docsContent > .docsContentSection > .apiCategory > .apiCategoryEndpoint .syntaxHighlighting > pre {
+  border-radius: 0;
+  top: 10px;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul {
+  padding: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul > li {
+  background: #f59b23;
+  list-style: none;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul > li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul > li > a:not(.btn) {
+  color: #fff;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul > li.active {
+  background: #f59b23;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul > li.active > a:not(.btn):hover {
+  text-decoration: none;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs > ul > li:not(.active) {
+  opacity: 0.4;
+}
+
+.App .docsContent > .docsContentSection .accordionTabs h6 {
+  text-transform: uppercase;
+}
